@@ -17,9 +17,13 @@ N: See apt-secure(8) manpage for repository creation and user configuration deta
 
 ## Command one-liner:
 ```bash
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo gpg --dearmor -o /usr/share/keyrings/yarn-archive-keyring.gpg && echo "deb [signed-by=/usr/share/keyrings/yarn-archive-keyring.gpg] https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list > /dev/null && sudo apt-get update
+curl -sSL https://raw.githubusercontent.com/0XOPx/fix-apt-github-codespaces/main/apt-fix.sh | sudo bash
 ```
+## Info: Do not use this is you aren't sure what the script does. If you aren't, look at it.
 
 # Running the script
 ## You run this like any bash script. Just do `chmod +x apt-fix.sh` and `./apt-fix.sh` - or if you use the command one-liner - just paste it into the terminal
 ## Hope this helps!
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Platform: GitHub Codespaces](https://img.shields.io/badge/Platform-GitHub%20Codespaces-blue?logo=github)
