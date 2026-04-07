@@ -13,7 +13,7 @@ N: See apt-secure(8) manpage for repository creation and user configuration deta
 ```
 ## Use this to fix this.
 
-## This only support Linux machines with apt! This uses `apt-get` so it supports every machine that has apt. Do not use Arch Linux with this - Arch uses `pacman`
+## This only support Linux machines with apt! This uses `apt-get` so it supports every machine that has apt. Do not use Arch Linux with this - Arch uses `pacman` - also GitHub Codespaces uses Debian key so this only supports Debian. (Or any distro on codespaces)
 
 ## Command one-liner:
 ```bash
