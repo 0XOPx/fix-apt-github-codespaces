@@ -1,0 +1,8 @@
+{
+  "name": "Fix-Apt Codespace",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "postCreateCommand": "curl -sSL https://raw.githubusercontent.com/0XOPx/fix-apt-github-codespaces/main/apt-fix.sh | sudo bash"
+}
